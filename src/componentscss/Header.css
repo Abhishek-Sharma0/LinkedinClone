@@ -73,6 +73,7 @@ input[type="text"]{
         justify-content: flex-start !important;
         margin-left: 5px;
     }
+    
     .width{
         width: 90% !important;
     }
@@ -137,6 +138,26 @@ input[type="text"]{
         align-self: center !important;
         margin-top: 25px;
         gap: 20px;
+    }
+    .searchdiv > img{
+        display: none;
+    }
+    .MuiAvatar-colorDefault{
+        display: none !important;
+    }
+    .MuiIconButton-root{
+        flex-wrap: wrap;
+    }
+    .mainHeader{
+        width: 120px;
+    }
+    #position {
+        position: absolute !important;
+        top: 45px;
+        right: 43px;
+    }
+    .toolbar{
+        align-items: baseline !important;
     }
     
 }

@@ -19,7 +19,7 @@ const Sidebar = () => {
                 <div className='avatardiv'>
                     <Avatar />
                 </div>
-                <h2>Welcome {user.name}</h2>
+                <h2 style={{fontSize: "22px" ,textAlign: "center"}}>Welcome {user.name}</h2>
                 <p className='email'>{user.email}</p>
                 <div className='connections'>
                    <p>Connections</p>

@@ -114,8 +114,8 @@ export default function Header() {
                             </Badge>
                             <span style={{fontSize: "12px",fontWeight: "800"}} className="iconspan">Notifications</span>
                         </IconButton>
-                        <Avatar alt="Remy Sharp"/>
-                        <button style={{ color: "skyblue", padding: "15px", border: "2px solid skyblue", borderRadius: "800px", width: "100px" }} onClick={handlesignout}>Logout</button>
+                        <Avatar alt="Remy Sharp" id="avatarnone"/>
+                        <button style={{ color: "skyblue", padding: "15px", border: "2px solid skyblue", borderRadius: "800px", width: "100px" }} id="position" onClick={handlesignout}>Logout</button>
                     </div>
                     
                 </Toolbar>

@@ -88,3 +88,12 @@ input[type="text"]{
     align-items: center;
     gap: 10px;
 }
+@media (max-width: 500px) {
+.formsearch{
+    height: 185px;
+}
+.formbuttons{
+    flex-wrap: wrap;
+}
+    
+}
