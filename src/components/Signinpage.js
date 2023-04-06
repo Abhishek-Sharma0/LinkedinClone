@@ -8,7 +8,7 @@ import Join from './Join'
 const Signinpage = () => {
   return (
     <BrowserRouter>
-    <div style={{backgroundColor: "whitesmoke",height: "auto" ,display: "flex",flexDirection: "column",justifyContent: "spaceBetween", }}>
+    <div style={{backgroundColor: "whitesmoke",height: "100%" ,display: "flex",flexDirection: "column",justifyContent: "spaceBetween", }}>
 
       <Signinheader />
       <Routes>

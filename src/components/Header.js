@@ -1,5 +1,4 @@
 import React from 'react';
-import {forwardref} from 'react'
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Badge from '@material-ui/core/Badge';
@@ -15,9 +14,8 @@ import { auth } from '../firebase/firbasesetup';
 import { signOut } from 'firebase/auth';
 import { Logoff } from './redux/Create';
 import { Dispatch } from '@reduxjs/toolkit';
-import { useDispatch } from 'react-redux';
 import { useEffect, useState,useRef } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Aadd,Rremove } from '../components/redux/Create'
 
 export default function Header() {
@@ -28,7 +26,6 @@ export default function Header() {
     const[searchstate,setsearchstate]=useState(false);
     const inputRef = useRef(null);
     async function handlesignout(){
-        console.log("clicked logout");
         try {
             await signOut(auth);
             dispatch(Logoff());

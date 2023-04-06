@@ -1,4 +1,4 @@
-import React, { useState,forwardRef } from 'react'
+import React, { useState} from 'react'
 import "../componentscss/Postbar.css"
 import CreateIcon from '@material-ui/icons/Create';
 import IconButtons from './IconButtons';
@@ -13,7 +13,7 @@ import { collection, getDocs } from "firebase/firestore";
 import { useEffect } from 'react';
 import { onSnapshot } from 'firebase/firestore';
 import { Avatar } from '@material-ui/core';
-import { updateDoc, serverTimestamp } from "firebase/firestore";
+import { serverTimestamp } from "firebase/firestore";
 import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
 import CommentIcon from '@material-ui/icons/Comment';
 import ShareIcon from '@material-ui/icons/Share';
@@ -46,9 +46,10 @@ const Postbar =() => {
         }
         try {
             const newPost = { userName: user.name, postmessage: postmessage, photourl: user.photourl, uid: user.uid, timestamp: serverTimestamp(), };
+            // The addDoc method is used to add a new document to a collection and automatically generates a unique ID for the new document
+            
+            // On the other hand, the set method is used to set the data for a specific document in a collection. If the document already exists, the set method will overwrite the existing data. If the document does not exist, the set method will create a new document with the specified data
             const docRef = await addDoc(collection(db, "post"), newPost);
-
-            // await addDoc(docRef, { messagearray: [...post,{ userName: user.name, postmessage: postmessage }] }, { merge: true })
         } catch (e) {
             console.error("Error adding document: ", e);
         }
