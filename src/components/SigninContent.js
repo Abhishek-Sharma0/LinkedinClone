@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import "../componentscss/SigninContent.css"
 import GoogleButton from 'react-google-button'
 import { auth } from '../firebase/firbasesetup'
-import { signInWithEmailAndPassword } from 'firebase/auth'
 import {createUserWithEmailAndPassword} from 'firebase/auth'
 import { useSelector,useDispatch } from 'react-redux'
 import { Login } from './redux/Create'
@@ -17,6 +16,9 @@ const SigninContent = () => {
         e.preventDefault();
         let ref=await createUserWithEmailAndPassword(auth,email,password);
         console.log("this is uid looking for"+ " "+ref.user.uid);
+
+        //This code updates the current user's profile in a Firebase authentication system with a new display name and photo URL. The auth.currentUser object represents the currently authenticated user.
+        
         await updateProfile(auth.currentUser, {
             displayName: name , photoURL: "https://example.com/jane-q-user/profile.jpg"
           }).then(() => {

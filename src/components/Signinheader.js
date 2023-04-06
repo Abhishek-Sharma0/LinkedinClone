@@ -1,10 +1,9 @@
 import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import PeopleIcon from '@material-ui/icons/People';
 import ExploreIcon from '@material-ui/icons/Explore';
-import { BorderLeft, BusinessCenter, SupervisorAccount } from '@material-ui/icons';
+import { BusinessCenter} from '@material-ui/icons';
 import img from '../../src/linkedin-logo-transparent-png-16.png'
 import { Link } from "react-router-dom";
 import "../componentscss/Header.css"
