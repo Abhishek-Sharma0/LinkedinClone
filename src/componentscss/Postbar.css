@@ -1,0 +1,90 @@
+.postdiv{
+    flex-basis: 50%;
+    
+}
+.searchinput{
+    outline: none;
+    background-color: inherit;
+    border: none;
+    
+}
+
+.iputcontaine{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    width: 85%;
+    padding: 15px 15px;
+    border-radius: 500px;
+    border: 1px solid gray;
+}
+.formsearch{
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    height: 120px;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+input[type="text"]{
+    outline: none;
+    border: none;
+    width: 100%;
+    background: none;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.formbuttons{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.buttondiv{
+    padding: 15px;
+}
+.buttondiv:hover{
+    background-color: rgba(112, 181, 249, 0.2);
+    border-radius: 5px;
+}
+.publicpostitem{
+    flex-basis: 50%;
+    min-height: 140px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 30px;
+    gap: 20px;
+    
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+}
+.profilecontent{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.profilebuttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.profilebuttons >*{
+    color: gray;
+    font-weight: 400;
+}
+.profilebuttons>div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

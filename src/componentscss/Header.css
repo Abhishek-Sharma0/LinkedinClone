@@ -1,0 +1,142 @@
+.mainHeader{
+    border-bottom: 1px solid gray;
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0;
+    z-index: 60;
+    width: 100vw;
+    height: 70px;
+}
+.searchinput{
+    outline: none;
+    background-color: inherit;
+    border: none;
+    
+}
+
+.searchdiv{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    align-items: center;
+    margin-left: 5vw;
+}
+.iconsdiv{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+}
+.MuiIconButton-label {
+    flex-direction: column;
+  }
+.MuiIconButton-label:hover{
+    color: black;
+}
+.iputcontainer{
+    background-color: rgba(112, 181, 249, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    width: 80%;
+    padding: 5px 15px;
+    border-radius: 5px;
+    z-index: 999;
+}
+input[type="text"]{
+    outline: none;
+    border: none;
+    width: 80%;
+    background: none;
+}
+.toolbar{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    height: 100%;
+}
+.headermain{
+    background-color: white !important;
+}
+.searchIcon{
+    color: gray;
+
+}
+@media (max-width: 1000px) {
+    .toolbar{
+        width: 100vw !important;
+        justify-content: flex-start !important;
+        margin: auto !important;
+    }
+    .searchdiv{
+        width: 15%;
+        justify-content: flex-start !important;
+        margin-left: 5px;
+    }
+    .width{
+        width: 90% !important;
+    }
+    .iputcontainer{
+        background-color: inherit;
+    }
+    .showcontainer{
+        width: 100%;
+        background-color: rgba(112, 181, 249, 0.2);
+        
+    }
+    .notactivee{
+        display: none !important;
+    }
+    .form{
+        display: none;
+    }
+    .showform{
+        display: block !important;
+    }
+    .iconspan{
+        display: none;
+    }
+    .iconsdiv>span{
+        display: none !important;
+    }
+    .iconsdiv{
+        width: 75%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logoimage{
+        height: 30px !important;
+    }
+    .signintoolbar{
+        width: 100vw !important;
+        justify-content: space-around !important;
+        margin: auto !important;
+        gap: 10vw;
+
+    }
+    .signincontent {
+        width: 70% !important;
+        padding: 15px !important;
+    }
+}
+@media (max-width: 700px) {
+    .iputcontainer{
+        padding: 0;
+    }
+    .signintoolbar{
+        justify-content: flex-start !important;
+        gap: 20vw !important;
+    }
+    .iconsdiv{
+        width: 65%;
+    }
+    .signincontent {
+        width: 90% !important;
+    }
+    .formcontainer {
+        align-self: center !important;
+        margin-top: 25px;
+        gap: 20px;
+    }
+    
+}

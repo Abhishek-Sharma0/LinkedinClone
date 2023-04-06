@@ -1,0 +1,72 @@
+.signincontent{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    flex-direction: column;
+    
+}
+.formmain{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+.formcontainer{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-top: 25px;
+    gap: 20px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    gap: 20px;
+}
+.labelinput{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+label{
+    font-size: 12px;
+    font-weight: 600;
+}
+input{
+    height: 40px;
+    font-size: 16px;
+}
+h1{
+    font-size: 45px;
+    font-weight: 400;
+}
+form>button{
+    height: 40px;
+    background-color: rgb(24, 145, 221);
+    padding: 20px;
+    border-radius: 400px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+@media (max-width:1000px) {
+   .mainHeader{ z-index: 60;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+    
+}
