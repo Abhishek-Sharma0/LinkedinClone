@@ -41,7 +41,7 @@ const Join = () => {
             setpassword("");
     }
   return (
-    <div className='signincontent'>
+    <div className='signincontent rigestercontent'>
         <diV className="formmain">
             <h1>Make most of your professional community</h1>
             <div className='formcontainer'>
